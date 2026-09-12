@@ -306,6 +306,7 @@ void printMaze() {
 
 // ---------- Motor functions (Step 10 - real driver code) ----------
 void moveForward() {
+  Serial.println("Motor: moving forward");
   Serial.println("ACTION: Move forward");
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
