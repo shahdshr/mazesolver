@@ -177,6 +177,14 @@ void explore(int row, int col) {
   long leftDist  = readDistance(TRIG_LEFT, ECHO_LEFT);
   long rightDist = readDistance(TRIG_RIGHT, ECHO_RIGHT);
 
+ Serial.print("Front: ");
+ Serial.print(frontDist);
+ Serial.print(" cm | Left: ");
+ Serial.print(leftDist);
+ Serial.print(" cm | Right: ");
+ Serial.print(rightDist);
+ Serial.println(" cm");
+
   bool frontWall = wallDetected(frontDist);
   bool leftWall  = wallDetected(leftDist);
   bool rightWall = wallDetected(rightDist);
